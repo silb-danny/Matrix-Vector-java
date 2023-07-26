@@ -10,8 +10,8 @@ public class Matrix {
     public double[][] mat;
     // constructors
     public Matrix(Matrix m){
-        this.rows = m.rows;
-        this.columns = m.columns;
+        this.rows = this.rows;
+        this.columns = this.columns;
         this.mat = new double[m.rows][m.columns];
         this.setAll(m);
     }
@@ -94,7 +94,7 @@ public class Matrix {
     public void randomM(Random rnd, double scale) {
         for (int i = 0; i < this.rows; i++) {
             for (int j = 0; j < this.columns; j++) {
-                mat[i][j] = rnd.nextDouble()*scale-scale/2;
+                mat[i][j] = rnd.nextDouble()*scale;
             }
         }
     }

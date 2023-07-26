@@ -1,6 +1,4 @@
 package mathExt;
-
-import java.lang.management.MemoryType;
 import java.util.Random;
 
 public class Vector {
@@ -188,7 +186,7 @@ public class Vector {
     {
         zero.sub(this);
         double x1 = Math.signum(zero.x);
-        double dir = zero.dir() + Math.PI*0.25;
+        double dir = zero.dir() + Math.PI*0.4;
 //        System.out.println(dir);
         zero.setDir(dir);
         zero.mult(strength);
